@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {CardDeck, Col, Container, Image, Row} from 'react-bootstrap'
+import {CardDeck, Col, Container, Row} from 'react-bootstrap'
 import AuthForm from "./AuthForm";
 import TrustCard from "./TrustCard";
 
@@ -23,11 +23,8 @@ class App extends Component {
                 <Row className="mt-5">
                     <Col className="d-none d-xl-block col-md-4"/>
                     <Col>
-                        <Row className="d-flex justify-content-center">
-                            <Image src="logo.png" width="30%" roundedCircle/>
-                        </Row>
                         <Row className="d-flex justify-content-center px-5 text-center">
-                            <p>Полноценный клиент сервиса Яндекс.Музыка в Telegram!</p>
+                            <p>Авторизация в playinnowbot через Яндекс.Музыка</p>
                         </Row>
                         <AuthForm Link={Link}/>
                     </Col>
@@ -47,12 +44,9 @@ class App extends Component {
                                            text="На наших серверах хранится только уникальный токен"/>
                                 <TrustCard icon="code" title="Показываем код"
                                            text="Весь исходный код опубликован в репозитории на GitHub"/>
-                                {/*<TrustCard icon="shield-alt" title="Официальное приложение"*/}
-                                {/*           text="Авторизация происходит через OAuth приложение Яндекс используемое в их*/}
-                                {/*           собственных клиентах"/>*/}
-                                {/*<TrustCard icon="spinner" title="Выполнение в браузере"*/}
-                                {/*           text="Процесс авторизации выполняется в браузере без возможности вмешательства*/}
-                                {/*           со стороны сервера"/>*/}
+                                <TrustCard icon="spinner" title="Выполнение в браузере"
+                                           text="Процесс авторизации выполняется в браузере без возможности вмешательства
+                                           со стороны сервера"/>
                             </CardDeck>
                         </Row>
                     </Container>
@@ -68,7 +62,7 @@ class App extends Component {
                             </Col>
                             <Col xs={{span: "auto"}} className="text-right">
                                 <span>
-                                    Автор: <Link text="@MarshalX" url="https://github.com/MarshalX/"/>
+                                    Автор формы: <Link text="@MarshalX" url="https://github.com/MarshalX/"/>
                                 </span>
                             </Col>
                         </Row>

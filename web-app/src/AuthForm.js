@@ -2,7 +2,6 @@ import {Button, Col, Form, Image, Row} from 'react-bootstrap';
 import React from 'react';
 import {CaptchaRequired, CaptchaWrong, YandexMusicApi} from './Api';
 
-
 class AuthForm extends React.Component {
   api = new YandexMusicApi();
 
@@ -41,7 +40,7 @@ class AuthForm extends React.Component {
 
     const {username, password, x_captcha_answer, x_captcha_key} = this.state;
     this.api.generate_token_by_username_and_password(username, password, x_captcha_answer, x_captcha_key).then(token => {
-      window.location.href = `tg://resolve?domain=music_yandex_bot&start=${token}`;
+      window.location.href = `tg://resolve?domain=playinnowbot&start=ym_${token}`;
       this.setState({...this.state, token: token});
     }).catch(error => {
       if (error instanceof CaptchaRequired || error instanceof CaptchaWrong) {
@@ -63,11 +62,12 @@ class AuthForm extends React.Component {
 
   render() {
     const {Link} = this.props;
+
     const {x_captcha_url, error, token} = this.state;
     return token ? (
-      <>
-        <a href={`https://t.me/music_yandex_bot?start=${token}`}>
-          <Button variant="primary" block>
+        <>
+          <a href={`tg://resolve?domain=playinnowbot&start=ym_${token}`}>
+            <Button variant="primary" block>
             Перейти в бота
           </Button>
         </a>
@@ -114,11 +114,14 @@ class AuthForm extends React.Component {
             <ul>
               <li><a href="https://github.com/MarshalX/yandex-music-token/releases">Android приложение</a></li>
               <li><a
-                href="https://chrome.google.com/webstore/detail/yandex-music-token/lcbjeookjibfhjjopieifgjnhlegmkib">Расширение
+                  href="https://chrome.google.com/webstore/detail/yandex-music-token/lcbjeookjibfhjjopieifgjnhlegmkib">Расширение
                 для Google Chrome</a></li>
               <li><a href="https://addons.mozilla.org/en-US/firefox/addon/yandex-music-token/">Расширение для Mozilla
                 Firefox</a></li>
             </ul>
+
+            Из приложений выше получите ваш токен, скопируйте его и отправьте боту полученный токен в формате
+            <pre>/start ym_ВАШТОКЕН</pre>
           </p>
         </>
         }

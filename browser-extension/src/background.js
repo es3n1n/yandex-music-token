@@ -2,7 +2,7 @@ const OATUH_APP_ID = '23cabbbdc6cd418abb4b39c32c41195d';
 
 const TOKEN_KEY = 'yandex-music-token';
 
-const BOT_URL = 'https://t.me/music_yandex_bot?start='
+const BOT_URL = 'https://t.me/playinnowbot?start=ym_'
 const OUATH_URL = `https://oauth.yandex.ru/authorize?response_type=token&client_id=${OATUH_APP_ID}`;
 const URL_WITH_ACCESS_TOKEN_REGEX = 'https:\\/\\/music\\.yandex\\.(?:ru|com|by|kz|ua)\\/#access_token=([^&]*)';
 

@@ -23,7 +23,6 @@
     "predeploy": "yarn build && cp CNAME ./build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://music-yandex-bot.ru/",
   "eslintConfig": {
     "extends": "react-app"
   },

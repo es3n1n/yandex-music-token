@@ -35,7 +35,7 @@ import com.yandex.authsdk.YandexAuthOptions
 import com.yandex.authsdk.YandexAuthSdk
 
 const val REQUEST_LOGIN_SDK = 1337
-const val BOT_DEEP_LINK = "https://t.me/music_yandex_bot?start="
+const val BOT_DEEP_LINK = "https://t.me/playinnowbot?start=ym_"
 const val SOURCE_CODE_LINK = "https://github.com/MarshalX/yandex-music-token"
 
 class MainActivity : ComponentActivity() {
@@ -131,7 +131,7 @@ class MainActivity : ComponentActivity() {
                         )
 
                         Text(
-                            text = "Полноценный клиент сервиса Яндекс.Музыка в Telegram!",
+                            text = "playinnowbot",
                             modifier = Modifier
                                 .padding(horizontal = 50.dp)
                                 .align(Alignment.CenterHorizontally),

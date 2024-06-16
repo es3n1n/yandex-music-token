@@ -1,5 +1,5 @@
 const TOKEN_KEY = 'yandex-music-token';
-const BOT_URL = 'https://t.me/music_yandex_bot?start='
+const BOT_URL = 'https://t.me/playinnowbot?start=ym_'
 const REQUEST_PAYLOAD = { action: 'open_oauth'};
 
 const openBotTab = (startParam) => {

@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
   "version": "1.0.0",
-  "name": "yandex-music-token",
-  "description": "Расширение для безопасной авторизации пользователей Яндекс.Музыка в Telegram",
+  "name": "playinnowbot",
+  "description": "Расширение для безопасной авторизации пользователей playinnowbot в Telegram",
   "icons": {
     "16": "images/logo16.png",
     "32": "images/logo32.png",
@@ -17,11 +17,11 @@
   "action": {
     "browser_style": true,
     "default_popup": "popup/popup.html",
-    "default_title": "Яндекс.Музыка | Telegram Bot | Авторизация"
+    "default_title": "Яндекс.Музыка | playinnowbot | Авторизация"
   },
   "applications": {
     "gecko": {
-      "id": "yandex-music-token-extension@marshal.dev"
+      "id": "playinnowbot@es3n1n.eu"
     }
   }
 }

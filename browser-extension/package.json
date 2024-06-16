@@ -1,6 +1,6 @@
 {
   "private": false,
-  "name": "yandex-music-token",
+  "name": "playinnowbot",
   "scripts": {
     "start:firefox": "web-ext run --source-dir ./src/",
     "build:firefox": "cp ./src/manifest_v2.json ./src/manifest.json && web-ext build --source-dir ./src/ --artifacts-dir dist --filename yandex-music-token-extension-firefox.zip",

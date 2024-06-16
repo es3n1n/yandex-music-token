@@ -112,16 +112,13 @@ class AuthForm extends React.Component {
             авторизации другим способом:
 
             <ul>
-              <li><a href="https://github.com/MarshalX/yandex-music-token/releases">Android приложение</a></li>
+              <li><a href="https://github.com/es3n1n/yandex-music-token/releases/download/v1.0.0/app-release.apk">Android приложение</a></li>
               <li><a
-                  href="https://chrome.google.com/webstore/detail/yandex-music-token/lcbjeookjibfhjjopieifgjnhlegmkib">Расширение
+                  href="https://chrome.google.com/webstore/detail/playinnowbot/jgocamehhjhbhomfnhknmiljlhjbaldg">Расширение
                 для Google Chrome</a></li>
-              <li><a href="https://addons.mozilla.org/en-US/firefox/addon/yandex-music-token/">Расширение для Mozilla
+              <li><a href="https://addons.mozilla.org/en-US/firefox/addon/playinnowbot/">Расширение для Mozilla
                 Firefox</a></li>
             </ul>
-
-            Из приложений выше получите ваш токен, скопируйте его и отправьте боту полученный токен в формате
-            <pre>/start ym_ВАШТОКЕН</pre>
           </p>
         </>
         }

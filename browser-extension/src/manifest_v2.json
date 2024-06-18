@@ -1,6 +1,6 @@
 {
   "manifest_version": 2,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "name": "playinnowbot",
   "description": "Расширение для безопасной авторизации пользователей playinnowbot в Telegram",
   "icons": {
